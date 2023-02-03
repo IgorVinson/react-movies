@@ -25,12 +25,16 @@
     margin: 16px;
 }
 
-.actors-list-item-image {
+img {
     width: 100px;
     height: 150px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 8px;
+}
+
+img.actors-list-item-image[src*="null"] {
+    display: none;
 }
 
 .actors-list-item-details {
@@ -48,4 +52,8 @@
 .actors-list-item-character {
     font-size: 14px;
     color: gray;
+}
+
+.actors-list-item-image img[src=""] {
+    display: none;
 }

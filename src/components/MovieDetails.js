@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Link, Outlet, useParams} from "react-router-dom";
+import {Link, Outlet, useLocation, useParams} from "react-router-dom";
 import axios from "axios";
 import './MovieDetails.Module.css'
 
@@ -7,8 +7,9 @@ const MovieDetails = () => {
 
     const {id} = useParams()
     const [movie, setMovie] = React.useState(null);
-    useEffect(() => {
 
+
+    useEffect(() => {
         async function getMovie() {
             const updateMovie = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_MOVIES_API_KEY}`)
             setMovie(updateMovie.data)

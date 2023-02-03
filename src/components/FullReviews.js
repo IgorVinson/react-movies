@@ -16,18 +16,19 @@ const FullReviews = () => {
     }, [id])
 
     return (
-        <div className='reviews'>
-            <h1>Full Reviews</h1>
-            <ul>
-                {reviews.results?.map((review) => (
-                    <li key={review.id}>
-                        <p>{review.author}</p>
-                        <p>{review.content}</p>
-                    </li>
-                ))}
-            </ul>
+      <>
+        <div className="reviews">
+          {reviews.length>0?'':<h3>There are no reviews for this movie</h3>}
+          <ul>
+            {reviews.results?.map((review) => (
+              <li key={review.id}>
+                <p>{review.author}</p>
+                <p>{review.content}</p>
+              </li>
+            ))}
+          </ul>
         </div>
-
+      </>
     );
 };
 

@@ -1,11 +1,23 @@
-nav {
+.container {
     display: flex;
-    border: 1px solid #232021;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #282c34;
+}
+
+> nav {
+    display: flex;
+    border-bottom: 1px solid #100f0f;
 }
 
 a {
     padding: 8px 16px;
     text-decoration: none;
+    color: #000;
     font-weight: 600;
     font-size: 1.25rem;
     transition: all 0.2s ease-in-out;
@@ -15,4 +27,6 @@ a:hover {
     color: #0070f3;
 }
 
-
+a.active {
+    color: #f30024;
+}
