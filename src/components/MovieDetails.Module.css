@@ -1,0 +1,32 @@
+.movie-details {
+    flex-direction: column;
+    text-align: start;
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+}
+
+.movie-details-title {
+    margin-bottom: 1rem;
+}
+
+.movie-details-overview {
+    margin-bottom: 1rem;
+}
+
+.movie-details-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.movie-details-poster {
+    width: 50%;
+    height: 50%;
+    margin-right: 1rem;
+}
+
+.movie-details-score {
+    font-size: 0.8rem;
+}

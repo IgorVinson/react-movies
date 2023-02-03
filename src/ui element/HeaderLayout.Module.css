@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    border: 1px solid #232021;
+}
+
+a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #0070f3;
+}
+
+

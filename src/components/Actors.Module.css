@@ -1,0 +1,51 @@
+.actors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.actors-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.actors-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.actors-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+}
+
+.actors-list-item-image {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.actors-list-item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.actors-list-item-name {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.actors-list-item-character {
+    font-size: 14px;
+    color: gray;
+}
